@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>AI Chat Assistant</h1>
+      <p class="subtitle">Basic chat + coding helper (local Python app)</p>
+
+      <section id="chat" class="chat-box"></section>
+
+      <form id="chat-form" class="input-row">
+        <input id="message" type="text" placeholder="Ask for code, summaries, plans, or fixes..." required />
+        <button type="submit">Send</button>
+        <button type="button" id="clear-btn" class="secondary">Clear</button>
+      </form>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
