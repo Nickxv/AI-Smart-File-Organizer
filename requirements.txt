@@ -1,2 +1,4 @@
 streamlit==1.39.0
 watchdog==6.0.0
+flask==3.0.3
+pytest==8.3.3
